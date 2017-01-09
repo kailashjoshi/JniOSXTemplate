@@ -16,6 +16,8 @@ Following items must be installed in your system before building the project
 
 * Execute [build_jni](https://github.com/kailashjoshi/JniOSXTemplate/blob/master/build_jni) file 
 ```bash
+git clone https://github.com/kailashjoshi/JniOSXTemplate.git
+cd JniOSXTemplate
 source build_jni
 ```
 * Go to target folder and extract **jnijava-distro.tar.gz** file

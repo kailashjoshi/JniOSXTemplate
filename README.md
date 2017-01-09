@@ -38,7 +38,9 @@ cd jnijava
 └── shared
     └── jninative.jnilib
  ```
-* Finally run the program to print hello world
+ 
+##Run the Program (Step 4)
+* Execute **jnirunner** script to print hello world
 ```bash
 bin/jnirunner
 ```

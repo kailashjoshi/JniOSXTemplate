@@ -1,0 +1,28 @@
+#!/bin/bash
+
+SCRIPT="$0"
+SCRIPT="$(cd "$(dirname "$SCRIPT")"; pwd)/$(basename "$SCRIPT")"
+JNI_HOME=`dirname "$SCRIPT"`/..
+JNI_HOME=`cd "$JNI_HOME"; pwd`
+JAVA_NATIVE=$JNI_HOME/shared/jninative.jnilib
+JAVA_JAR=$JNI_HOME/jnijava.jar
+JAVA_OPTS="-Djava.native=$JAVA_NATIVE"
+
+if [ -x "$JAVA_HOME/bin/java" ]; then
+JAVA="$JAVA_HOME/bin/java"
+else
+JAVA=`which java`
+fi
+
+if [ ! -x "$JAVA" ]; then
+echo "Could not find any executable java binary. Please install java in your PATH or set JAVA_HOME"
+exit 1
+fi
+
+start_Jni(){
+eval exec "$JAVA"   $JAVA_OPTS -jar $JAVA_JAR
+}
+
+start_Jni 
+
+exit $?

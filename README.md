@@ -1,5 +1,5 @@
 # JniOSXTemplate 
-JNI Template project for MAC OSX. All it does is print hello world from Java and C++. :computer::computer:
+JNI Template project for MAC OSX. All it does is print hello world from Java and C++. 
 ##Prerequisites (Step 1)
 Following items must be installed in your system before building the project
 

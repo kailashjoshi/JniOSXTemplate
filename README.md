@@ -27,6 +27,17 @@ tar xzvf jnijava-distro.tar.gz
 cd jnijava
 ```
 * **jnijava** folder contents **bin** folder (Script for executing program),**lib** (All dependencies of program),**shared**(Compiled c++ program) and **jnijava.jar** project jar
+```bash
+├── bin
+│   └── jnirunner
+├── jnijava.jar
+├── lib
+│   ├── log4j-1.2.17.jar
+│   ├── slf4j-api-1.7.22.jar
+│   └── slf4j-log4j12-1.7.22.jar
+└── shared
+    └── jninative.jnilib
+ ```
 * Finally run the program to print hello world
 ```bash
 bin/jnirunner

@@ -1,7 +1,8 @@
-# JniOSXTemplate
-JNI Template project for MAC OSX. All it does is print hello world from Java and C++.
+# JniOSXTemplate 
+JNI Template project for MAC OSX. All it does is print hello world from Java and C++. :computer::computer:
 ##Prerequisites (Step 1)
 Following items must be installed in your system before building the project
+
 
 1.  JDK 
 2.  MAVEN
@@ -14,17 +15,17 @@ Following items must be installed in your system before building the project
 
 ##Build the project (Step 3)
 
-* Execute [build_jni](https://github.com/kailashjoshi/JniOSXTemplate/blob/master/build_jni) file 
-```bash
-git clone https://github.com/kailashjoshi/JniOSXTemplate.git
-cd JniOSXTemplate
-./build_jni
+* Execute [build_jni](https://github.com/kailashjoshi/JniOSXTemplate/blob/master/build_jni) file :arrow_down:
+```sh
+$  git clone https://github.com/kailashjoshi/JniOSXTemplate.git
+$  cd JniOSXTemplate
+$  ./build_jni
 ```
-* Go to target folder and extract **jnijava-distro.tar.gz** file
-```bash
-cd target
-tar xzvf jnijava-distro.tar.gz
-cd jnijava
+* Go to target folder and extract **jnijava-distro.tar.gz** file :arrow_down:
+```sh
+$  cd target
+$  tar xzvf jnijava-distro.tar.gz
+$  cd jnijava
 ```
 * **jnijava** folder contents **bin** folder (Script for executing program),**lib** (All dependencies of program),**shared**(Compiled c++ program) and **jnijava.jar** project jar
 ```bash
@@ -40,11 +41,11 @@ cd jnijava
  ```
  
 ##Run the Program (Step 4)
-* Execute **jnirunner** script to print hello world
-```bash
-bin/jnirunner
+* Execute **jnirunner** script to print hello world :arrow_down:
+```sh
+$  bin/jnirunner
 ```
-* Output of program
+* Output of program :arrow_down:
 ```bash
 2017-01-08 22:01:11 INFO  HelloJni:17 - Hello from JAVA!
 2017-01-08 22:01:11 INFO  HelloJni:18 - Hello World C++!
